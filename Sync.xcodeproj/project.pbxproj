@@ -11,6 +11,13 @@
 		1A1A70C12BFF83220097C2FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A70C02BFF83220097C2FF /* ContentView.swift */; };
 		1A1A70C32BFF83230097C2FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A70C22BFF83230097C2FF /* Assets.xcassets */; };
 		1A1A70C72BFF83230097C2FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A70C62BFF83230097C2FF /* Preview Assets.xcassets */; };
+		1A1A70CF2BFF85740097C2FF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1A70CE2BFF85740097C2FF /* ComposableArchitecture */; };
+		1A1A70D12BFF86410097C2FF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A70D02BFF86410097C2FF /* Models.swift */; };
+		1A1A70D42BFF97740097C2FF /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1A70D32BFF97740097C2FF /* Tagged */; };
+		1A1A70D62BFF97740097C2FF /* TaggedMoney in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1A70D52BFF97740097C2FF /* TaggedMoney */; };
+		1A1A70D82BFF97740097C2FF /* TaggedTime in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1A70D72BFF97740097C2FF /* TaggedTime */; };
+		1A1A70DA2BFF98680097C2FF /* SyncUpsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A70D92BFF98680097C2FF /* SyncUpsList.swift */; };
+		1A63C2BE2C065A2F0033C908 /* SyncUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63C2BD2C065A2F0033C908 /* SyncUpForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,9 @@
 		1A1A70C22BFF83230097C2FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1A70C42BFF83230097C2FF /* Sync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sync.entitlements; sourceTree = "<group>"; };
 		1A1A70C62BFF83230097C2FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A1A70D02BFF86410097C2FF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1A1A70D92BFF98680097C2FF /* SyncUpsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsList.swift; sourceTree = "<group>"; };
+		1A63C2BD2C065A2F0033C908 /* SyncUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1A70D42BFF97740097C2FF /* Tagged in Frameworks */,
+				1A1A70D82BFF97740097C2FF /* TaggedTime in Frameworks */,
+				1A1A70CF2BFF85740097C2FF /* ComposableArchitecture in Frameworks */,
+				1A1A70D62BFF97740097C2FF /* TaggedMoney in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +71,9 @@
 				1A1A70C22BFF83230097C2FF /* Assets.xcassets */,
 				1A1A70C42BFF83230097C2FF /* Sync.entitlements */,
 				1A1A70C52BFF83230097C2FF /* Preview Content */,
+				1A1A70D02BFF86410097C2FF /* Models.swift */,
+				1A1A70D92BFF98680097C2FF /* SyncUpsList.swift */,
+				1A63C2BD2C065A2F0033C908 /* SyncUpForm.swift */,
 			);
 			path = Sync;
 			sourceTree = "<group>";
@@ -85,6 +102,12 @@
 			dependencies = (
 			);
 			name = Sync;
+			packageProductDependencies = (
+				1A1A70CE2BFF85740097C2FF /* ComposableArchitecture */,
+				1A1A70D32BFF97740097C2FF /* Tagged */,
+				1A1A70D52BFF97740097C2FF /* TaggedMoney */,
+				1A1A70D72BFF97740097C2FF /* TaggedTime */,
+			);
 			productName = Sync;
 			productReference = 1A1A70BB2BFF83220097C2FF /* Sync.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +136,10 @@
 				Base,
 			);
 			mainGroup = 1A1A70B22BFF83220097C2FF;
+			packageReferences = (
+				1A1A70CD2BFF85730097C2FF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				1A1A70D22BFF97740097C2FF /* XCRemoteSwiftPackageReference "swift-tagged" */,
+			);
 			productRefGroup = 1A1A70BC2BFF83220097C2FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1A70D12BFF86410097C2FF /* Models.swift in Sources */,
+				1A63C2BE2C065A2F0033C908 /* SyncUpForm.swift in Sources */,
+				1A1A70DA2BFF98680097C2FF /* SyncUpsList.swift in Sources */,
 				1A1A70C12BFF83220097C2FF /* ContentView.swift in Sources */,
 				1A1A70BF2BFF83220097C2FF /* SyncApp.swift in Sources */,
 			);
@@ -205,6 +235,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Debug;
 		};
@@ -258,6 +289,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Release;
 		};
@@ -359,6 +391,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A1A70CD2BFF85730097C2FF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.4;
+			};
+		};
+		1A1A70D22BFF97740097C2FF /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A1A70CE2BFF85740097C2FF /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A1A70CD2BFF85730097C2FF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		1A1A70D32BFF97740097C2FF /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A1A70D22BFF97740097C2FF /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
+		};
+		1A1A70D52BFF97740097C2FF /* TaggedMoney */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A1A70D22BFF97740097C2FF /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = TaggedMoney;
+		};
+		1A1A70D72BFF97740097C2FF /* TaggedTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A1A70D22BFF97740097C2FF /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = TaggedTime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A1A70B32BFF83220097C2FF /* Project object */;
 }
